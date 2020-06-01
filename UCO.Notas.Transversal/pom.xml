@@ -1,0 +1,42 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>co.edu.uco.notas</groupId>
+	<artifactId>UCO.Notas.Transversal</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>UCO.Notas.Transversal</name>
+	<description>Componente que posee todos los aspectos que pueden ser utilizados de forma trasnversal por la aplicacion</description>
+	<build>
+		<sourceDirectory>src</sourceDirectory>
+		<plugins>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.8.0</version>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+	<dependencies>
+		<dependency>
+			<groupId>co.edu.uco.transversal</groupId>
+			<artifactId>UCO.Transversal</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>co.edu.uco.mensajes.trasnversal</groupId>
+			<artifactId>UCO.Mensajes.Tranversal</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.microsoft.azure/applicationinsights-spring-boot-starter -->
+		<dependency>
+		    <groupId>com.microsoft.azure</groupId>
+		    <artifactId>applicationinsights-spring-boot-starter</artifactId>
+		    <version>2.6.0</version>
+		</dependency>
+		
+	</dependencies>
+</project>

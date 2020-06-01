@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ehcache xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="ehcache.xsd" updateCheck="false"
+	monitoring="off" dynamicConfig="true" maxBytesLocalHeap="100M">
+
+	<!--diskStore path="java.io.tmpdir" / -->
+	<cache name="demoCache" maxEntriesLocalHeap="10000"
+		eternal="false" timeToLiveSeconds="600" overflowToOffHeap="true"
+		maxBytesLocalOffHeap="4g" diskExpiryThreadIntervalSeconds="1">
+		<persistence strategy="localTempSwap" />
+	</cache>
+</ehcache>
